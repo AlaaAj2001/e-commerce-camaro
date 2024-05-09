@@ -1,38 +1,379 @@
+
 .App {
+  position: relative;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.title {
+  font-weight: bold;
+  font-family: "Montserrat ExtraBold", sans-serif;
+  position: absolute;
+  top: -25px;
+  left: 190px;
+  font-size: 33px;
+  color: #212830;
+}
+
+.icons_div {
+  position: absolute;
+  right: 16.5rem;
+  top: 20px;
+  transform: translateY(-50%);
+  margin-right: 10px;
+}
+
+.icons {
+  font-size: 22px;
+  position: relative;
+  top: 1rem;
+  transform: translateY(-50%);
+  margin-right: 17px;
+}
+
+.cart_div {
+  position: absolute;
+  left: 7rem;
+  top: -0.5rem;
+}
+
+.cart_div p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -70px;
+}
+
+.price {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  margin-top: -8px;
+  color: #838383;
+}
+
+.your_cart {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.bar_div {
+  background-color: #212830;
+  position: absolute;
+  top: 3.6rem;
+  height: 40px;
+  width: calc(100% - 190px);
+  padding-left: 190px;
+  display: flex;
+  justify-content: left;
+}
+
+.bar_div button {
+  background-color: transparent;
+  border: #212830;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 18px;
+}
+
+.laptops_div {
+  top: 8rem;
+}
+
+.devices_div {
+  background-color: white;
+  position: relative;
+  width: calc(100% - 10% - 10%);
+  left: 10%;
+  right: 10%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 130px;
+}
+
+.audio_sound_camera_div {
+  background-color: white;
+  position: relative;
+  top: 10rem;
+  width: 100%;
+}
+
+.devices_div_title {
+  position: absolute;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  width: calc(100% - 20px);
+  left: 20px;
+  height: 20px;
+}
+
+.products_div {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  top: 90px;
+}
+
+.product_div {
+  position: relative;
+  padding: 3px;
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product_img {
+  width: 140px;
+}
+
+.product_name {
+  font-family: "Leelawadee UI";
+  font-weight: 600;
+  font-size: 12px;
+  position: relative;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 30px;
+  color: #515151;
+}
+
+.product_price {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13.8px;
+  position: relative;
+  top: 15px;
+  color: #ad1726;
+}
+
+.name_price_div{
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical_line {
+  border-left: 1px solid #ebebeb;
+  height: 110px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.horizontal_line {
+  position: absolute;
+  border-bottom: 1px solid #ebebeb;
+  height: 5px;
+  width: calc(100% - 20px - 20px);
+  left: 20px;
+  right: 20px;
+  margin-top: 46px;
+}
+
+.red_horizontal_line {
+  position: absolute;
+  border-bottom: 2px solid #ad1726;
+  height: 5px;
+  width: 8.5%;
+  left: 20px;
+  right: 20px;
+  margin-top: 46px;
+}
+
+
+
+.learn_more_div {
+  position: relative;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+
+.dark_div {
+  background-color: #212830;
+  position: relative;
+  margin-top: 20px;
+  height: 48px;
+  width: 83%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 87px;
+}
+
+.red_div {
+  background-color: #ab1d2b;
+  position: relative;
+  margin-top: 20px;
+  height: 48px;
+  width: 17%;
+  display: flex;
+  right: 114px;
+  align-items: center;
+  justify-content: left;
+  clip-path: polygon(100% 0%, 22% 0%, 0% 100%, 100% 100%);
+}
+
+.red_div p {
+  color: white;
+  position: absolute;
+  display: flex;
+  font-size: 10.5px;
+  left: 63px;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow_icon {
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 140px;
+}
+
+.adv_img {
+  position: relative;
+  width: 320px;
+  margin-bottom: 10px;
+}
+
+.logos_div {
+  padding-bottom: 70px;
+  width: calc(100% - 10% - 10%);
+  left: 10%;
+  right: 10%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logos_img {
+  margin: 40px;
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+}
+
+.subscribe_div {
+  font-family: "Leelawadee UI";
+  font-weight: 700;
+  font-size: 30px;
+  position: relative;
+  width: 100%;
+  top: 10rem;
+  height: 210px;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+  background-color: #f0f0f0;
   text-align: center;
+  color: #212830;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.subscribe_div p {
+  font-weight: 400;
+  font-size: 17px;
+  color: #67676b;
+  font-family: Arial, sans-serif;
+  margin-top: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.email_div {
+  margin-top: 30px;
+  padding: 10px;
+  height: 30px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 300px;
+  background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.email_div::placeholder {
+  color: #b8b8b8;
+}
+
+.email_div:hover {
+  border: 1px solid black;
+}
+
+.subscribe_button {
+  height: 50px;
+  margin: 15px 0px 50px;
+  padding: 10px 20px;
+  background-color: #ab1d2b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 180px;
+  font-size: 14px;
+}
+
+.nav_div{
+  font-family: "Leelawadee UI";
+  font-weight: 700;
+  font-size: 30px;
+  position: relative;
+  width: 100%;
+  top: 10rem;
+  height: 210px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 15px;
+  background-color: #262626;
+  text-align: center;
+  color: #212830;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 600px) {
+  .products_div {
+    display: inline;
+  }
+
+  .product_div {
+    flex-direction: row;
+  }
+
+  .vertical_line {
+    border-bottom: 1px solid #ebebeb;
+    height: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .name_price_div{
+    top: -10px;
+  }
+
+  .email_div{
+    width: 50%;
+  }
+  .subscribe_button{
+    width: 30%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
