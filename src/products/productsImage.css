@@ -1,0 +1,52 @@
+.product_div {
+  position: relative;
+  padding: 3px;
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product_img {
+  width: 140px;
+}
+
+.name_price_div {
+  display: flex;
+  flex-direction: column;
+}
+
+.product_name {
+  font-family: "Leelawadee UI";
+  font-weight: 600;
+  font-size: 12px;
+  position: relative;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 30px;
+  color: #515151;
+}
+
+.product_price {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13.8px;
+  position: relative;
+  top: 15px;
+  color: #ad1726;
+}
+
+@media screen and (max-width: 600px) {
+  .product_div {
+    flex-direction: row;
+  }
+
+  .name_price_div {
+    top: -10px;
+  }
+}

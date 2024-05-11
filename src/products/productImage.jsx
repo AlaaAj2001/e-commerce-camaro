@@ -1,4 +1,5 @@
 import React from "react";
+import "./productsImage.css";
 
 const Product = ({ ProductUrl, ProductAlt, ProductName, ProductPrice }) => {
   return (

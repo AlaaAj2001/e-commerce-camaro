@@ -1,0 +1,72 @@
+.title {
+    font-weight: bold;
+    font-family: "Montserrat ExtraBold", sans-serif;
+    position: absolute;
+    top: -25px;
+    left: 190px;
+    font-size: 33px;
+    color: #212830;
+  }
+  
+  .icons_div {
+    position: absolute;
+    right: 16.5rem;
+    top: 20px;
+    transform: translateY(-50%);
+    margin-right: 10px;
+  }
+  
+  .icons {
+    font-size: 22px;
+    position: relative;
+    top: 1rem;
+    transform: translateY(-50%);
+    margin-right: 17px;
+  }
+  
+  .cart_div {
+    position: absolute;
+    left: 7rem;
+    top: -0.5rem;
+  }
+  
+  .cart_div p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -70px;
+  }
+  
+  .price {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    margin-top: -8px;
+    color: #838383;
+  }
+  
+  .your_cart {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .bar_div {
+    background-color: #212830;
+    position: absolute;
+    top: 3.6rem;
+    height: 40px;
+    width: calc(100% - 190px);
+    padding-left: 190px;
+    display: flex;
+    justify-content: left;
+  }
+  
+  .bar_div button {
+    background-color: transparent;
+    border: #212830;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 18px;
+  }
