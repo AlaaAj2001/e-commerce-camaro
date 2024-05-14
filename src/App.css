@@ -11,27 +11,32 @@ body {
   top: 8rem;
 }
 
-.big_audio_sound_div {
+.audio_sound_div {
+  top: 10rem;
+  flex-wrap: wrap;
   background-color: white;
   position: relative;
-  top: 10rem;
-  width: 100%;
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  justify-content: left;
+  margin-bottom: 6rem;
 }
 
-.audio_sound_div {
-  position: relative;
-  width: 100%;
+.adv_img {
   display: flex;
-  align-items: center;
-  justify-items: center;
+  position: relative;
+  margin-left: 5px;
+  margin-right: 20px;
+  width: 320px;
+  top: 60px;
+  left: 30px;
+  right: 30px;
 }
 
 .camera_div {
   background-color: white;
   position: relative;
-  top: 10rem;
+  top: 1rem;
   width: 100%;
 }
 
@@ -85,11 +90,6 @@ body {
   color: rgb(255, 255, 255);
   position: absolute;
   left: 140px;
-}
-
-.adv_img {
-  position: relative;
-  width: 320px;
 }
 
 .logos_div {
@@ -192,4 +192,28 @@ body {
   .subscribe_button {
     width: 30%;
   }
+
+  .adv_img {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  .learn_more_div {
+    display: none;
+  }
 }
+
+@media screen and (max-width: 669px) {
+  .adv_img{
+    top: 80px;
+  }
+}
+
+@media screen and (max-width: 1188px) {
+  .learn_more_div {
+    display: none;
+  }
+}
+
+

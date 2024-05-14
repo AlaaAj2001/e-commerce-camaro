@@ -38,6 +38,12 @@ class App extends Component {
       logos,
     } = this.state;
 
+    const audioSoundImageContent = (
+      <>
+        <img className="adv_img" src={productImage3} alt="advertising" />
+      </>
+    );
+
     return (
       <div className="App">
         {loading ? (
@@ -52,38 +58,32 @@ class App extends Component {
                   ProductArray={smartphonesLaptopsTabletsData}
                 />
               </div>
-              <div className="big_audio_sound_div">
-                <div className="audio_sound_div">
-                  <Products
-                    ProductTitle={"Audio & Sound"}
-                    ProductArray={headphones}
-                  />
-                  <img
-                    className="adv_img"
-                    src={productImage3}
-                    alt="advertising"
-                  />
+              <div className="audio_sound_div">
+                <Products
+                  ProductTitle={"Audio & Sound"}
+                  ProductArray={headphones}
+                  advImage={audioSoundImageContent}
+                />
+              </div>
+              <div className="learn_more_div">
+                <div className="dark_div">
+                  Save your moneys with super promotion, available every Sunday
+                  in the weekend!
                 </div>
-                <div className="learn_more_div">
-                  <div className="dark_div">
-                    Save your moneys with super promotion, available every
-                    Sunday in the weekend!
-                  </div>
-                  <div className="red_div">
-                    <p>LEARN MORE</p>
-                    <FontAwesomeIcon
-                      className="arrow_icon"
-                      icon={faArrowRightLong}
-                    />
-                  </div>
+                <div className="red_div">
+                  <p>LEARN MORE</p>
+                  <FontAwesomeIcon
+                    className="arrow_icon"
+                    icon={faArrowRightLong}
+                  />
                 </div>
               </div>
-
               <div className="camera_div">
                 <Products
                   ProductTitle={"Camera & Lens"}
                   ProductArray={cameras}
                 />
+
                 <div className="logos_div">
                   {logos.map((logo, index) => (
                     <img

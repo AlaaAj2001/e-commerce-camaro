@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 130px;
+  flex-wrap: wrap;
 }
 
 .devices_div_title {
@@ -39,6 +40,12 @@
   margin-top: 46px;
 }
 
+.big_div{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+
 .products_div {
   width: 100%;
   position: relative;
@@ -67,5 +74,11 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 669px) {
+  .big_div{
+    flex-wrap: wrap;
   }
 }
