@@ -8,6 +8,7 @@
   justify-content: center;
   padding-bottom: 130px;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .devices_div_title {
@@ -40,10 +41,11 @@
   margin-top: 46px;
 }
 
-.big_div{
+.big_div {
   display: flex;
   position: relative;
   flex-direction: row;
+  justify-content: center;
 }
 
 .products_div {
@@ -63,6 +65,32 @@
   margin-right: 20px;
 }
 
+.pagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.pagination button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  color: #212830;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #ccc;
+}
+
+.pagination button.active {
+  background-color: #ab1d2b;
+  color: white;
+}
+
 @media screen and (max-width: 600px) {
   .products_div {
     display: inline;
@@ -78,7 +106,7 @@
 }
 
 @media screen and (max-width: 669px) {
-  .big_div{
+  .big_div {
     flex-wrap: wrap;
   }
 }
